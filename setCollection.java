@@ -1,11 +1,15 @@
-// unordered and non-duplicate collection
+// unordered and non-duplicate collection (collection of unordered-unique values)
+// do not have index values
 import java.util.*;
 
 public class setCollection
 {
     public static void main(String a[])
     {
-        Set<Integer> setNo = new HashSet<Integer>();
+        Set<Integer> setNo = new HashSet<Integer>(); // HashSet gives unordered
+        // Set<Integer> setNo = new TreeSet<Integer>(); // gives ordered set
+        //Collection<Integer> setNo = new TreeSet<Integer>();  // even this works
+        //Iterator<Integer> setNo = new.iterator();   // Iterator is above collection interface
         setNo.add(2);
         setNo.add(9);
         setNo.add(4);
